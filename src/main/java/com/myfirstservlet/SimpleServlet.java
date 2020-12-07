@@ -1,6 +1,5 @@
 package com.myfirstservlet;
-
-/*import javax.servlet.ServletException;
+import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
@@ -17,4 +16,4 @@ public class SimpleServlet extends HttpServlet {
         out.println("<h3>Hello World Abhinav Trying Again!</h3>");
         out.close();
     }
-}*/
+}
