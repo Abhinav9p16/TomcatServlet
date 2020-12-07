@@ -1,4 +1,4 @@
-/*package com.myfirstservlet;
+package com.myfirstservlet;
 
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
@@ -25,8 +25,8 @@ public class LoginServlet extends HttpServlet {
         String pwd = request.getParameter("pwd");
         String userID = getServletConfig().getInitParameter("user");
         String password = getServletConfig().getInitParameter("password");
-        String userRegex = "^[A-Z]{1}.{2,}$";
-        String passRegex = "^(?=.*\\d)(?=.*[A-Z])(?=.*\\W)(?!.*\\W\\w*\\W)(?!.*\\s).{8,}$";
+        String userRegex = "";//"^[A-Z]{1}.{2,}$";
+        String passRegex = "";//"^(?=.*\\d)(?=.*[A-Z])(?=.*\\W)(?!.*\\W\\w*\\W)(?!.*\\s).{8,}$";
 
         if (!userID.matches(userRegex)) {
             RequestDispatcher rd = getServletContext().getRequestDispatcher("/login.html");
@@ -52,4 +52,4 @@ public class LoginServlet extends HttpServlet {
             rd.include(request, response);
         }
     }
-}*/
+}
